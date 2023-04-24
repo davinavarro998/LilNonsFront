@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: #E1D7D5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header>div.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+header>div.first img {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    margin: 10px;
+}
+
+
+header>div.first button {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 40px;
+    align-self: center;
+    margin: 10px;
+    background-color: #e1d7d5a7;
+    border-radius: 10px;
+    border: 1px solid #c29f99;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header>div.first button:hover {
+    background-color: #ffefed;
+}
+
+
+
+header>nav {
+    align-self: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header>nav>ul>li {
+    margin: 12px;
+}
+
+header>nav>ul>li>button {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 40px;
+    align-self: center;
+    margin: 10px;
+    background-color: #e1d7d5a7;
+    border-radius: 10px;
+    border: 1px solid #c29f99;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header>nav>ul>li>button:hover {
+    background-color: #ffefed;
+}
+
+
+main {
+    height: 100%;
+    background-color: #E1D7D5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+main>div.information {
+    width: 100%;
+
+    max-width: 550px;
+    text-align: center;
+    align-self: center;
+}
+
+main>div.nft-frame {
+    width: 100%;
+
+    max-width: 550px;
+    text-align: center;
+    align-self: center;
+}
+
+footer {
+    border: 1px solid rgb(47, 195, 21);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background-color: #0f1e2dd3;
+    color: #d9ebff;
+    ;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.records-container {
+    border-radius: 20px;
+    background-color: #E1D7D5;
+    color: black;
+    font-family: Arial;
+}
+
+.records-container h1,
+.records-container ol {
+
+    padding: 20px;
+
+}
+
+
+.records-container ol li {
+    color: #000000;
+}
+
+#caixaListaBidders {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bidderInfo {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    margin-bottom: 4px;
+    border-color: #000000;
+    padding: 8px;
+    font-size: 10px;
+    color: black;
+}
+
+#startAuctionBtn {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #c29f99;
+    background-color: #E1D7D5;
+    cursor: pointer;
+
+}
+
+#startAuctionBtn:hover {
+    background-color: #ffefed;
+}
+
+#startAuctionBtn:active {
+    opacity: 0.8;
+}
+
+.biddingSpace {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 140px;
+    margin: auto;
+
+
+}
+
+#bidInputValue {
+    border-radius: 10px;
+    padding: 10px;
+    border-style: none;
+    margin-top: 5px;
+}
+
+#bidBtn {
+    padding: 8px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #c29f99;
+    background-color: #E1D7D5;
+    cursor: pointer;
+}
+
+#bidBtn:hover {
+    background-color: #ffefed;
+}
+
+#bidBtn:active {
+    opacity: 0.8;
+}
+
+@media(max-width:429px) {
+    .bidderInfo h2 {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:280px) {
+    .bidderInfo h2 {
+        font-size: 8px;
+    }
+}
+
+@media(max-width:333px) {
+    .nft-frame img {
+        width: 250px;
+    }
+}

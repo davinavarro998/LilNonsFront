@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lil Nouns</title>
+</head>
+
+<body>
+    <header>
+        <div class="first">
+            <img src="https://lilnouns.wtf/static/media/logo.55a8df98.svg" alt="">
+            <button class="treasury">
+                <span style="color:grey;font-weight:bold;">Treasury</span><span style="font-weight:bold;"> Ξ 321 + 15
+                    Nouns</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><button>Prop Lot</button></li>
+                <li><button>DAO</button></li>
+                <li><button>Docs</button></li>
+                <li><button>Discourse</button></li>
+                <li><button>Playground</button></li>
+                <li><button id="connectWalletBtn">Connect</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="nft-frame">
+            <p id="countDownClock"></p>
+            <img id="token_image" src="" alt="imagem nft aqui ">
+            <h1>Lilnoun#<span id="token_id"></span></h1>
+            <button id="startAuctionBtn">Start Auction</button>
+            <div class="biddingSpace">
+                <button id="bidBtn">Bid</button>
+                <input id="bidInputValue" type="number" step="0.1" min="0" placeholder="amount (ETH)">
+            </div>
+        </div>
+        <div class="information">
+            <div class="records-container">
+                <h1 style="text-align:center;">Record of Bids</h1>
+                <ol id="caixaListaBidders" class="biddingListContainer" reversed>
+
+
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Powered by TokenAim</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.2/web3.min.js"
+        integrity="sha512-Ls8WO4Esu7Jb9a92BfIp1Ftgl9t5Ncaa/6zKzpOkTGXW+dPcJcI4Yz2HR7cXY0YcfIAsL7R9Gqfbw8ERX8iYaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
